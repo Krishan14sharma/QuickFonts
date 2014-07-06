@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="TextView">
+        <attr name="quickfont" format="string" />
+    </declare-styleable>
+</resources>

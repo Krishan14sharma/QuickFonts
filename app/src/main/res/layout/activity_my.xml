@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+        app:quickfont="fftusj.ttf"
+
+        />
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#3498db"
+        android:textSize="22sp"
+        app:quickfont="JennaSue.ttf" />
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#2cc26b"
+        android:textSize="22sp"
+        app:quickfont="JennaSue.ttf" />
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="42sp"
+        app:quickfont="JennaSue.ttf" />
+
+    <com.krishan.AutoCompleteTextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+        app:quickfont="fftusj.ttf" />
+
+    <com.krishan.CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="42sp"
+        app:quickfont="JennaSue.ttf"
+
+        />
+
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+
+        />
+
+    <com.krishan.ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#3498db"
+        android:textSize="22sp"
+        app:quickfont="fftusj.ttf" />
+
+    <com.krishan.RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+        app:quickfont="JennaSue.ttf" />
+
+    <com.krishan.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+
+        />
+
+    <com.krishan.EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textSize="22sp"
+        app:quickfont="JennaSue.ttf"
+
+        />
+
+    <com.krishan.CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="22sp"
+        app:quickfont="fftusj.ttf" />
+
+    <com.krishan.Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionNewActivity"
+        android:text="New Button"
+        android:textSize="22sp"
+        app:quickfont="JennaSue.ttf" />
+
+</LinearLayout>
