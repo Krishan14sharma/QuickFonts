@@ -19,6 +19,7 @@ public class Splash extends ActionBarActivity {
              public void run() {
                  Intent in =new Intent(Splash.this,MyActivity.class);
                  startActivity(in);
+                 finish();
              }
          },2000);
     }
