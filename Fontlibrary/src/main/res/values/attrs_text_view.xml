@@ -1,5 +1,6 @@
 <resources>
     <declare-styleable name="TextView">
         <attr name="quickfont" format="string" />
+        <attr name="debuggable" format="boolean"></attr>
     </declare-styleable>
 </resources>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.util.LruCache;
 import android.util.Log;
+import android.util.Pair;
 
 /**
  * Created by KRISHAN on 06-Jul-14.
@@ -13,12 +14,13 @@ class TypefaceManager {
 
     private static LruCache<String, Typeface> lruCache = new LruCache<String, Typeface>(10);  //Todo provide configuration for cache size
 
-    public static Typeface getTypeface(Context context, String name) {
+    public static Pair<Typeface, Boolean> getTypeface(Context context, String name) {
         Typeface typeface = lruCache.get(name);
-
+        boolean fromCache=true;
         if (typeface == null) {
             try {
                 typeface = Typeface.createFromAsset(context.getAssets(), name);
+                fromCache=false;
             } catch (Exception e) {
 
             }
@@ -28,7 +30,7 @@ class TypefaceManager {
             } else
                 lruCache.put(name, typeface);
         }
-        return typeface;
+        return Pair.create(typeface,fromCache);
     }
 
 }

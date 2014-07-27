@@ -19,7 +19,6 @@ public class MyActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         textview=(TextView)findViewById(R.id.textview);
-
     }
 
 

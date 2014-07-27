@@ -10,6 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import chnk.view.R;
 
@@ -43,11 +44,17 @@ public class ToggleButton extends android.widget.ToggleButton{
         }
         if(quickfont!=null&!isInEditMode())
         {
-            Typeface typeface=TypefaceManager.getTypeface(getContext(),quickfont);
+            Pair<Typeface,Boolean> pair=TypefaceManager.getTypeface(getContext(),quickfont);
+            Typeface typeface=pair.first;
+            boolean fromCache=pair.second;
+
             if(typeface!=null)
             {
                 setTypeface(typeface);
-                Log.v("TAG",TypefaceManager.getTypeface(getContext(),quickfont).toString());
+            }
+            if(!fromCache)
+            {
+                setTextColor(Color.RED);
             }
         }
 

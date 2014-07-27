@@ -10,11 +10,13 @@ import android.graphics.drawable.Drawable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import chnk.view.R;
 
 public class CheckedTextView extends android.widget.CheckedTextView{
     private String quickfont;
+    private boolean debuggable;
 
     public CheckedTextView(Context context) {
         super(context);
@@ -36,6 +38,7 @@ public class CheckedTextView extends android.widget.CheckedTextView{
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TextView, defStyle, 0);
         try {
             quickfont = a.getString(R.styleable.TextView_quickfont);
+            debuggable=a.getBoolean(R.styleable.TextView_debuggable, false);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
@@ -43,11 +46,17 @@ public class CheckedTextView extends android.widget.CheckedTextView{
         }
         if(quickfont!=null&!isInEditMode())
         {
-            Typeface typeface=TypefaceManager.getTypeface(getContext(),quickfont);
+            Pair<Typeface,Boolean> pair=TypefaceManager.getTypeface(getContext(),quickfont);
+            Typeface typeface=pair.first;
+            boolean fromCache=pair.second;
+
             if(typeface!=null)
             {
                 setTypeface(typeface);
-                Log.v("TAG",TypefaceManager.getTypeface(getContext(),quickfont).toString());
+            }
+
+            if(debuggable){
+                if(!fromCache)setTextColor(Color.RED);
             }
         }
 

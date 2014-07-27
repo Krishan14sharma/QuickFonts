@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/FontViews.iml" filepath="$PROJECT_DIR$/FontViews.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fontlibrary/Fontlibrary.iml" filepath="$PROJECT_DIR$/Fontlibrary/Fontlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewserver/viewserver.iml" filepath="$PROJECT_DIR$/viewserver/viewserver.iml" />
     </modules>
   </component>
 </project>
