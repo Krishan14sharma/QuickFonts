@@ -1,34 +1,30 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
-import android.view.View;
+
 import chnk.view.R;
 
-public class CheckedTextView extends android.widget.CheckedTextView{
+public class TextView extends android.widget.TextView {
     private String quickfont;
     private boolean debuggable;
 
-    public CheckedTextView(Context context) {
+    public TextView(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public CheckedTextView(Context context, AttributeSet attrs) {
+    public TextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public CheckedTextView(Context context, AttributeSet attrs, int defStyle) {
+    public TextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
@@ -38,7 +34,7 @@ public class CheckedTextView extends android.widget.CheckedTextView{
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TextView, defStyle, 0);
         try {
             quickfont = a.getString(R.styleable.TextView_quickfont);
-            debuggable=a.getBoolean(R.styleable.TextView_debuggable, false);
+            debuggable=a.getBoolean(R.styleable.TextView_debuggable,false);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

@@ -1,4 +1,4 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,26 +6,25 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
 
 import chnk.view.R;
 
-public class EditText extends android.widget.EditText{
+public class Button extends android.widget.Button{
     private String quickfont;
     private boolean debuggable;
 
-    public EditText(Context context) {
+    public Button(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public EditText(Context context, AttributeSet attrs) {
+    public Button(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public EditText(Context context, AttributeSet attrs, int defStyle) {
+    public Button(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }

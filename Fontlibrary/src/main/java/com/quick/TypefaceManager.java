@@ -1,9 +1,8 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.util.LruCache;
-import android.util.Log;
 import android.util.Pair;
 
 /**

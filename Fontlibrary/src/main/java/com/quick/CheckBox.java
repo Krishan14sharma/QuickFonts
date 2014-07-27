@@ -1,17 +1,13 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
-import android.view.View;
+
 import chnk.view.R;
 
 public class CheckBox extends android.widget.CheckBox{

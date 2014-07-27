@@ -1,4 +1,4 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,26 +6,25 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
 
 import chnk.view.R;
 
-public class Button extends android.widget.Button{
+public class CheckedTextView extends android.widget.CheckedTextView{
     private String quickfont;
     private boolean debuggable;
 
-    public Button(Context context) {
+    public CheckedTextView(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public Button(Context context, AttributeSet attrs) {
+    public CheckedTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public Button(Context context, AttributeSet attrs, int defStyle) {
+    public CheckedTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }

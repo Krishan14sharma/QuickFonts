@@ -1,33 +1,30 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
-import android.view.View;
+
 import chnk.view.R;
 
-public class ToggleButton extends android.widget.ToggleButton{
+public class RadioButton extends android.widget.RadioButton{
     private String quickfont;
+    private boolean debuggable;
 
-    public ToggleButton(Context context) {
+    public RadioButton(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public ToggleButton(Context context, AttributeSet attrs) {
+    public RadioButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public ToggleButton(Context context, AttributeSet attrs, int defStyle) {
+    public RadioButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
@@ -37,6 +34,7 @@ public class ToggleButton extends android.widget.ToggleButton{
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TextView, defStyle, 0);
         try {
             quickfont = a.getString(R.styleable.TextView_quickfont);
+            debuggable=a.getBoolean(R.styleable.TextView_debuggable, false);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
@@ -52,9 +50,9 @@ public class ToggleButton extends android.widget.ToggleButton{
             {
                 setTypeface(typeface);
             }
-            if(!fromCache)
-            {
-                setTextColor(Color.RED);
+
+            if(debuggable){
+                if(!fromCache)setTextColor(Color.RED);
             }
         }
 

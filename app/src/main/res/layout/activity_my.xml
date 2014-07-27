@@ -10,16 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MyActivity">
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textSize="22sp"
         app:quickfont="fftusj.ttf"
+        app:debuggable="true"
 
         />
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -27,7 +28,7 @@
         android:textSize="22sp"
         app:quickfont="JennaSue.ttf" />
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -35,14 +36,14 @@
         android:textSize="22sp"
         app:quickfont="JennaSue.ttf" />
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textSize="42sp"
         app:quickfont="JennaSue.ttf" />
 
-    <com.krishan.AutoCompleteTextView
+    <com.quick.AutoCompleteTextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +51,7 @@
         android:textSize="22sp"
         app:quickfont="fftusj.ttf" />
 
-    <com.krishan.CheckedTextView
+    <com.quick.CheckedTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -60,7 +61,7 @@
         />
 
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -68,7 +69,7 @@
 
         />
 
-    <com.krishan.ToggleButton
+    <com.quick.ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -76,21 +77,21 @@
         android:textSize="22sp"
         app:quickfont="fftusj.ttf" />
 
-    <com.krishan.RadioButton
+    <com.quick.RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textSize="22sp"
         app:quickfont="JennaSue.ttf" />
 
-    <com.krishan.TextView
+    <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22sp"
 
         />
 
-    <com.krishan.EditText
+    <com.quick.EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="username"
@@ -99,14 +100,14 @@
 
         />
 
-    <com.krishan.CheckBox
+    <com.quick.CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textSize="22sp"
         app:quickfont="fftusj.ttf" />
 
-    <com.krishan.Button
+    <com.quick.Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,34 +1,29 @@
-package com.krishan;
+package com.quick;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Pair;
-import android.view.View;
+
 import chnk.view.R;
 
-public class AutoCompleteTextView extends android.widget.TextView {
+public class ToggleButton extends android.widget.ToggleButton{
     private String quickfont;
-    private boolean debuggable;
 
-    public AutoCompleteTextView(Context context) {
+    public ToggleButton(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public AutoCompleteTextView(Context context, AttributeSet attrs) {
+    public ToggleButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public AutoCompleteTextView(Context context, AttributeSet attrs, int defStyle) {
+    public ToggleButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
@@ -38,7 +33,6 @@ public class AutoCompleteTextView extends android.widget.TextView {
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TextView, defStyle, 0);
         try {
             quickfont = a.getString(R.styleable.TextView_quickfont);
-            debuggable=a.getBoolean(R.styleable.TextView_debuggable, false);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
@@ -54,9 +48,9 @@ public class AutoCompleteTextView extends android.widget.TextView {
             {
                 setTypeface(typeface);
             }
-
-            if(debuggable){
-                if(!fromCache)setTextColor(Color.RED);
+            if(!fromCache)
+            {
+                setTextColor(Color.RED);
             }
         }
 
