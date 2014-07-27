@@ -2,9 +2,8 @@ FontViews
 =========
 Easy to use font library.Add quick fonts to your views using this.
 
-
-   Usage
-   ------
+Usage
+------
 
       <com.quick.TextView
         android:layout_width="wrap_content"
