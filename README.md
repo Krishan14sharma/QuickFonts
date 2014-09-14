@@ -1,15 +1,20 @@
-FontViews
-=========
-Easy to use font library.Add quick fonts to your views using this.
+QuickFont
+=======
 
-## Usage
-------
+Android library to apply quick custom typefaces directly from layouts.The library maintains a cache of least recently used typefaces.
 
-      <com.quick.TextView
+Usage
+-----
+
+Here is an example of the use of this library.It contains commonly used widgets ,where you can apply typeface--
+
+```java
+
+   <com.quick.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
+        android:textColor="#2cc26b"
         android:textSize="22sp"
-        app:quickfont="fftusj.ttf"
-        app:debuggable="true"
+        app:quickfont="JennaSue.ttf" 
         />
