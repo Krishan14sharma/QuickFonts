@@ -31,7 +31,7 @@ Here is an example of the use of this library.It contains commonly used widgets 
 * [CheckedTextView](http://developer.android.com/reference/android/widget/CheckedTextView.html)
 * [ToggleButton](http://developer.android.com/reference/android/widget/ToggleButton.html)
 
-###### Need to use in your own custom View
+### Need to use in your own custom View
 you can do something like-
 
 ```java
@@ -41,9 +41,9 @@ Typeface typeface=QuickFontManager.getTypeface(getApplicationContext(), "Font.tt
 This will also add the typeface into its cache if not already there.
 
 
-###### Few Configurations (Optional)
+### Few Configurations (Optional)
 
-You can configure the cache size according to your need. Debuggable "true" will turn your view to red if typeface not fetched from cache.
+You can configure the cache size according to your need. Debuggable "true" will turn your view to red if typeface not fetched from cache.Use this in your splash or Application class.
 
 ```java
         new QuickFontManager.QuickFontBuilder().
@@ -52,5 +52,5 @@ You can configure the cache size according to your need. Debuggable "true" will 
         .build();
         
 ```
-Use this in your splash or Application class.
+
 
