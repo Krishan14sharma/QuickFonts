@@ -46,8 +46,8 @@ This will also add the typeface into its cache if not already there.
 You can configure the cache size according to your need. Debuggable "true" will turn your view to red if typeface not fetched from cache.Use this in your splash or Application class.
 
 ```java
-        new QuickFontManager.QuickFontBuilder().
-        setDebuggable(true)
+        new QuickFontManager.QuickFontBuilder()
+        .setDebuggable(true)
         .setCachesize(2)
         .build();
         
