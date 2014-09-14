@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.quick.QuickFontManager;
+
 
 public class MyActivity extends ActionBarActivity {
 
@@ -18,7 +20,9 @@ public class MyActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        textview=(TextView)findViewById(R.id.textview);
+        textview=(TextView)findViewById(R.id.simpletextview);
+        Typeface tf=QuickFontManager.getTypeface(getApplicationContext(), "JennaSue.ttf").first;
+        textview.setTypeface(tf);
     }
 
 

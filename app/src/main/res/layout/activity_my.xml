@@ -16,8 +16,6 @@
         android:text="@string/hello_world"
         android:textSize="22sp"
         app:quickfont="fftusj.ttf"
-        app:debuggable="true"
-
         />
 
     <com.quick.TextView
@@ -26,7 +24,8 @@
         android:text="@string/hello_world"
         android:textColor="#3498db"
         android:textSize="22sp"
-        app:quickfont="JennaSue.ttf" />
+        app:quickfont="JennaSue.ttf"
+        />
 
     <com.quick.TextView
         android:layout_width="wrap_content"
@@ -57,16 +56,15 @@
         android:text="@string/hello_world"
         android:textSize="42sp"
         app:quickfont="JennaSue.ttf"
-
         />
 
 
-    <com.quick.TextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textSize="22sp"
-
+        android:id="@+id/simpletextview"
         />
 
     <com.quick.ToggleButton
@@ -88,7 +86,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22sp"
-
         />
 
     <com.quick.EditText
@@ -97,7 +94,6 @@
         android:hint="username"
         android:textSize="22sp"
         app:quickfont="JennaSue.ttf"
-
         />
 
     <com.quick.CheckBox

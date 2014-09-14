@@ -40,7 +40,7 @@ public class ToggleButton extends android.widget.ToggleButton{
         }
         if(quickfont!=null&!isInEditMode())
         {
-            Pair<Typeface,Boolean> pair=TypefaceManager.getTypeface(getContext(),quickfont);
+            Pair<Typeface,Boolean> pair= QuickFontManager.getTypeface(getContext(), quickfont);
             Typeface typeface=pair.first;
             boolean fromCache=pair.second;
 

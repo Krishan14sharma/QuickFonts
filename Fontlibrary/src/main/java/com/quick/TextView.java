@@ -12,8 +12,6 @@ import chnk.view.R;
 
 public class TextView extends android.widget.TextView {
     private String quickfont;
-    private boolean debuggable;
-
     public TextView(Context context) {
         super(context);
         init(null, 0);
@@ -34,7 +32,6 @@ public class TextView extends android.widget.TextView {
         final TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.TextView, defStyle, 0);
         try {
             quickfont = a.getString(R.styleable.TextView_quickfont);
-            debuggable=a.getBoolean(R.styleable.TextView_debuggable,false);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
@@ -42,7 +39,7 @@ public class TextView extends android.widget.TextView {
         }
         if(quickfont!=null&!isInEditMode())
         {
-            Pair<Typeface,Boolean> pair=TypefaceManager.getTypeface(getContext(),quickfont);
+            Pair<Typeface,Boolean> pair= QuickFontManager.getTypeface(getContext(), quickfont);
             Typeface typeface=pair.first;
             boolean fromCache=pair.second;
 
@@ -51,9 +48,7 @@ public class TextView extends android.widget.TextView {
                 setTypeface(typeface);
             }
 
-            if(debuggable){
                 if(!fromCache)setTextColor(Color.RED);
-            }
         }
 
         // Note: This flag is required for proper typeface rendering
