@@ -54,6 +54,6 @@ public class EditText extends android.widget.EditText{
 
         // Note: This flag is required for proper typeface rendering
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG);
-
     }
+
 }

@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:floatview="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,7 +32,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
-        android:textColor="#2cc26b"
         android:textSize="22sp"
         app:quickfont="JennaSue.ttf" />
 
@@ -87,7 +87,19 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         />
-
+    <com.quick.FloatingLabelView
+        android:id="@+id/label1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        floatview:floatHintText="Username"
+        floatview:textColor="@android:color/black"
+        floatview:textTypeface="JennaSue.ttf"
+        floatview:floatHintTextColorFocused="@color/blue"
+        floatview:floatHintTextColorUnFocused="@android:color/secondary_text_light_nodisable"
+        floatview:floatHintTextTypeface="JennaSue.ttf"
+        floatview:floatHintTextSize="12"
+        floatview:floatHintTextGravity="left"
+        />
     <com.quick.EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,6 +122,10 @@
         android:onClick="actionNewActivity"
         android:text="New Button"
         android:textSize="22sp"
-        app:quickfont="JennaSue.ttf" />
+        app:quickfont="JennaSue.ttf"
+        android:visibility="gone"
+        />
+
+
 
 </LinearLayout>
