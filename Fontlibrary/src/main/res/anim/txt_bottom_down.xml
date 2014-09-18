@@ -6,7 +6,7 @@
         android:fillAfter="true"
         android:fromYDelta="0%p"
         android:interpolator="@android:anim/linear_interpolator"
-        android:toYDelta="100%p" />
+        android:toYDelta="50%p" />
     <alpha
         android:duration="300"
         android:fromAlpha="1.0"
