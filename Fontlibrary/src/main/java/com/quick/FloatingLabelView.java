@@ -111,16 +111,15 @@ public class FloatingLabelView extends LinearLayout implements OnFocusChangeList
         input.setTextColor(Color.BLACK);
 
         Context context = getContext();
-        input.setTextAppearance(context, android.R.attr.textAppearanceMedium);
-        display.setTextAppearance(context, android.R.attr.textAppearanceSmall);
+//        input.setTextAppearance(context, android.R.attr.textAppearanceMedium);
+//        display.setTextAppearance(context, android.R.attr.textAppearanceSmall);
 
         display.setPadding(5, 2, 5, 2);
     }
 
     private void createCustomLayout(AttributeSet attrs) {
 
-        TypedArray a = getContext().obtainStyledAttributes(attrs,
-                R.styleable.FloatingLabel, 0, 0);
+        TypedArray a = getContext().obtainStyledAttributes(attrs,R.styleable.FloatingLabel, 0, 0);
         // For Floating Hint
 
         String floatHintText = a

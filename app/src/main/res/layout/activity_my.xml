@@ -89,16 +89,18 @@
         />
     <com.quick.FloatingLabelView
         android:id="@+id/label1"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         floatview:floatHintText="Username"
         floatview:textColor="@android:color/black"
         floatview:textTypeface="JennaSue.ttf"
+        floatview:floatHintTextTypeface="JennaSue.ttf"
         floatview:floatHintTextColorFocused="@color/blue"
         floatview:floatHintTextColorUnFocused="@android:color/secondary_text_light_nodisable"
-        floatview:floatHintTextTypeface="JennaSue.ttf"
         floatview:floatSingleLine="true"
-        floatview:floatInputType="phone"
+        floatview:floatInputType="text"
+        floatview:floatHintTextGravity="left"
+        floatview:floatImeOptions="actionNext"
 
         />
     <com.quick.EditText
