@@ -19,9 +19,30 @@ Here is an example of the use of this library.It contains commonly used widgets 
         app:quickfont="JennaSue.ttf" 
         />
 ```       
+##### FloatinglabelView based on Hardik's FloatingLabel
+
+```xml
+
+  <com.quick.FloatingLabelView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        floatview:floatHintText="Username"
+        floatview:textColor="@android:color/black"
+        floatview:textTypeface="JennaSue.ttf"
+        floatview:floatHintTextTypeface="JennaSue.ttf"
+        floatview:floatHintTextColorFocused="@color/blue"
+        floatview:floatHintTextColorUnFocused="@android:color/secondary_text_light_nodisable"
+        floatview:floatSingleLine="true"
+        floatview:floatInputType="text"
+        floatview:floatHintTextGravity="left"
+        floatview:floatImeOptions="actionNext"
+        />
+```       
 
 
 ###### Supported Widgets:
+* [FloatingLabel](https://github.com/hardik-trivedi/FloatingLabel)
 * [TextView](http://developer.android.com/reference/android/widget/TextView.html)
 * [EditText](http://developer.android.com/reference/android/widget/EditText.html)
 * [Button](http://developer.android.com/reference/android/widget/Button.html)
